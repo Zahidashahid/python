@@ -43,14 +43,12 @@ print("\n-----------Simple functions on Set----------\n")
 typeOfintSet = type(intSet)
 lenOfintSet = len(intSet)
 
-
 print("Set A", intSet)
 print("Set B", intSetB)
 
 intSet.remove(1)
 print("Set A after removing 1 from it ",
       intSet)  # To avoid error if element want to remove that is not present in set use intSet.discard(1)
-
 
 maxOfIntSet = max(intSet)
 
@@ -87,8 +85,8 @@ for i in intSet:
 ----------Typecasting of Set Data type
 """
 print("----------Typecasting of Set Data type ")
-print("Change into List",list(intSet))
-print("Change into Tuple",tuple(intSet))
+print("Change into List", list(intSet))
+print("Change into Tuple", tuple(intSet))
 # print(dict(intSet)) # set can't typecast into dict
 
 """
@@ -112,14 +110,14 @@ def subOfSets():
     print("Set A:", intSet)
     print("Set B:", intSetB)
     subOfSet = intSet.difference(intSetB)
-    print("Difference:",subOfSet)
+    print("Difference:", subOfSet)
 
     """
     ------------------- Symmetric difference means all non common elements in sets----------
     ------------------- Symmetric difference update will update elements in set A with Symmetric difference set (all non common elements)----------
     """
-    print("Symmetric difference:",intSet.symmetric_difference(intSetB))
-    print("Symmetric difference update:",intSet.symmetric_difference_update(intSetB))
+    print("Symmetric difference:", intSet.symmetric_difference(intSetB))
+    print("Symmetric difference update:", intSet.symmetric_difference_update(intSetB))
     print("Set A:", intSet)
     print("Set B:", intSetB)
 
@@ -173,13 +171,15 @@ def updateSets():
 
 def intersectionSets():
     print("-------------- Intersection of 2 Sets -------------")
-    print(intSet.intersection(intSetB))
+    intersectionOfSet = intSet.intersection(intSetB)
+    print(intersectionOfSet)
     print(intSet.intersection_update(intSetB))
     """
     --------------Intersection Update is used to update set A with new values that are common in both sets--------
     """
     print("Set A:", intSet)
     print("Set B:", intSetB)
+    return (intersectionOfSet)
 
 
 sumOfSet()
