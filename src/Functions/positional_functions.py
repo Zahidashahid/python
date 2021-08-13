@@ -1,4 +1,3 @@
-
 def student(name, rollNum, marks):
     """
     here we have to take spacial care of positions of assigning values to variables
@@ -11,5 +10,5 @@ def student(name, rollNum, marks):
 
 
 student("zahida", 166, 50)
-student(name="zahida", marks=70,rollNum= 166)
+student(name="zahida", marks=70, rollNum=166)
 # here I change the position of data by using variables names
